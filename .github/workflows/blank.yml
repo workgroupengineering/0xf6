@@ -12,9 +12,10 @@ jobs:
         with:
           filename: metrics.svg
           token: ${{ secrets.MY_PAT }}
-          base: header
+          base: header, activity
           user: "0xF6"
           config_timezone: Europe/Moscow
+          plugin_languages_ignored: html, css
           plugin_languages: yes
           plugin_topics_limit: 0
           plugin_topics_mode: mastered
